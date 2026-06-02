@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANAD Hospital</title>
+    <!-- Waxaan soo jiidanay font qurxoon oo Google Fonts ah -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: skyblue; /* Midabka dambe ee madowga xiga */
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Qaybta Sare (Header) */
+        header {
+            background: linear-gradient(to right, #40b1cd, #69d1e7);
+            text-align: center;
+            padding: 25px 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            font-size: 0.9rem;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
+        /* Qaybta Dhexe (Main Content) */
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        /* Kaadhka Dhexe (Card) */
+        .card {
+            background-color: #494c6b;
+            border: 2px solid #5ce1e6;
+            border-radius: 15px;
+            max-width: 450px;
+            width: 100%;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(92, 225, 230, 0.4);
+        }
+
+        /* Sawirka Dhaqtarka */
+        .doctor-img {
+            width: 160px;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 12px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .card h2 {
+            color:blueviolet;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: #e0e0e0;
+            margin-bottom: 25px;
+            text-align: justify;
+            text-align-last: center;
+        }
+
+        /* Badanka Contact Us */
+        .btn-contact {
+            background: linear-gradient(to right, #2fa3c2, #4cd3f5);
+            color: white;
+            border: none;
+            padding: 12px 35px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.2s, background 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-contact:hover {
+            transform: scale(1.05);
+            background: linear-gradient(to right, #248ea9, #3cbcdb);
+        }
+
+        /* Qaybta Hoose (Footer) */
+        footer {
+            background: linear-gradient(to right, #2ea1bf, #53c4dd);
+            text-align: center;
+            padding: 15px 10px;
+            font-size: 0.8rem;
+            line-height: 1.8;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+
+    <!-- Header Section -->
+    <header>
+        <h1>HANAD Hospital <img src="doctor.png" alt="" height="40" width="40"> <i class="fa-solid fa-stethoscope"></i></h1>
+        <p>Caafimaadkaagu waa mudnaanteenna laad.</p>
+    </header>
+
+    <!-- Main Card Section -->
+    <main>
+        <div class="card">
+            <!-- Halkaan ku bedelo sawirkaaga dhaqtarka haddii aad haysato -->
+            
+            <img src="hanad.jpeg" alt="doctor" height="140" width="130">
+            <h2>24 Hours Medical Care</h2>
+            <p>
+                HANAD hospital waa isbitaal bixiya adeegyo caafimaad oo tayo sare leh 
+                24 saacadood, Wuxuu ku dedaalaa in uu siiyo bukaannada daryeel 
+                caafimaad oo degdeg ah.
+            </p>
+            
+            <a href="#" class="btn-contact">Contact Us</a>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2026 HANAD Hospital</p>
+        <p>📞 +252:614752285</p>
+        <p>🌐 CIRBISH Hospital</p>
+    </footer>
+
+</body>
+</html>
